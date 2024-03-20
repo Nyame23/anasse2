@@ -1,0 +1,313 @@
+{% load static %}
+<html>
+  <head></head>
+  <body class="sub_page">
+    {% load static %}
+
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <link rel="icon" href="{% static 'website/images/fevicon.png' %}" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Skyline webservice</title>
+
+    <!-- bootstrap core css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'website/css/bootstrap.css' %}"
+    />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome style -->
+    <link
+      href="{% static 'website/css/font-awesome.min.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'website/css/style.css' %}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet" />
+
+    <div class="hero_area">
+      <video autoplay loop muted>
+        <source src="{% static 'website/images/skyline3.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <span>Skyline webservice</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'index' %}"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'about' %}"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'service' %}">Services</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="{% url 'price' %}">Pricing</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                </li>
+              </ul>
+              <div class="quote_btn-container">
+                <!-- <form class="form-inline">
+                  <button class="btn nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form> -->
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> Call : 0537882387 </span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- service section -->
+
+    <section class="service_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Our Services</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'website/images/s1.png' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Opentext Consulting
+                </h4>
+                <p>
+                  In my capacity as an............
+                </p>
+                <a href="#consulting">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'website/images/s2.png' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Managed IT Services</h4>
+                <p>
+                  Ensure the seamless............
+                </p>
+                <a href="#migration">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'website/images/s3.png' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Automation</h4>
+                <p>
+                  We redefine efficiency............
+                </p>
+                <a href="#Automation">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'website/images/s4.png' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Web designing </h4>
+                <p>
+                  We are not just a web............
+                </p>
+                <a href="#web-design">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'website/images/s5.png' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>IT Consulting</h4>
+                <p>
+                  Navigate the complexities............
+                </p>
+                <a  href="#it-consulting">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'website/images/s6.png' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Software Development</h4>
+                <p>
+                  From concept to deploym............
+                </p>
+                <a href="#software-dev">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'website/images/cloud4.png' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Cloud Solutions</h4>
+                <p>
+                  Unlock the full potential of............
+                </p>
+                <a href="#cloud-solutions">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- end service section -->
+
+    <!-- explain service section -->
+    <div class="service-explain">
+      <div id="consulting">
+          <h4>Open text Consulting</h4>
+          <p>
+            In my capacity as an OpenText Consultant, I played a crucial role in guiding organizations through the strategic implementation of OpenText's Enterprise Information Management (EIM) solutions.           </p>
+      </div>
+      
+      <div id="migration">
+        <h4>Managed IT Services</h4>
+        <p>
+          Ensure the seamless operation of your IT infrastructure with our proactively managed IT services. We offer 24/7 monitoring, help desk support, and routine maintenance to keep your systems running at peak performance.         </p>
+    </div>
+
+      <div id="Automation">
+          <h4>Automation</h4>
+          <p>
+            We redefine efficiency and innovation through cutting-edge IT automation solutions. With a relentless commitment to streamlining operations, optimizing workflows, and driving digital transformation, we are your trusted partner in the dynamic landscape of technology          </p>
+      </div>
+      <div id="web-design">
+          <h4>Web Designing</h4>
+          <p>
+            We are not just a web designing company; we are architects of digital innovation. We specialize in creating stunning, user-centric websites that not only captivate audiences but also drive tangible results for businesses. With a passion for design excellence and a commitment to pushing the boundaries of web development, we elevate your online presence to new heights.           </p>
+      </div>
+      <div id="it-consulting">
+          <h4>IT Consulting</h4>
+          <p>
+              Navigate the complexities of technology with our expert IT consulting services. We offer strategic guidance to align your IT infrastructure with your business goals, ensuring optimal performance and scalability.
+          </p>
+      </div>
+      <div id="software-dev">
+          <h4>Software Development</h4>
+          <p>
+              From concept to deployment, our software development team crafts tailor-made solutions to meet your unique requirements. Whether it's web applications, mobile apps, or enterprise software, we deliver robust and scalable solutions.
+          </p>
+      </div>
+      <div id="cloud-solutions">
+          <h4>Cloud Solutions</h4>
+          <p>
+              Unlock the full potential of cloud computing with our comprehensive cloud solutions. We specialize in cloud migration, infrastructure optimization, and developing cloud-native applications to enhance agility and reduce operational costs.
+          </p>
+      </div>
+      
+  </div>
+  
+  
+    <!-- end info section -->
+  
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          © <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.skylinewebservice/">Skylinewebservice</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQery -->
+    <script src="{% static 'website/js/jquery-3.4.1.min.js' %}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'website/js/bootstrap.js' %}"></script>
+    <!-- custom js -->
+    <script src="{% static 'website/js/custom.js' %}"></script>
+  </body>
+</html>

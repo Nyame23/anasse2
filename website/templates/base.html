@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="icon" href="{% static 'website/images/fevicon.png' %}" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>{% block title %}Skyline webservice{% endblock %}</title>
+    <!-- Add your CSS and JavaScript links here -->
+
+    
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.css' %}" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- font awesome style -->
+    <link href="{% static 'website/css/font-awesome.min.css' %}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'website/css/style.css' %}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+    <!-- Add your JavaScript scripts here -->
+    {% block extra_js %}
+    <!-- Example:
+    <script src="{% static 'website/js/jquery-3.4.1.min.js' %}"></script>
+    -->
+    {% endblock %}
+</body>
+
+</html>

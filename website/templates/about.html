@@ -1,0 +1,255 @@
+{% load static %}
+<html>
+  <head></head>
+  <body class="sub_page">
+    {% load static %}
+
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <link rel="icon" href="{% static 'website/images/fevicon.png' %}" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Skyline webservice</title>
+
+    <!-- bootstrap core css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'website/css/bootstrap.css' %}"
+    />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome style -->
+    <link
+      href="{% static 'website/css/font-awesome.min.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'website/css/style.css' %}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet" />
+
+    <div class="hero_area">
+      <video autoplay loop muted>
+        <source src="{% static 'website/images/skyline3.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <span>Skyline webservice</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'index' %}"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'about' %}"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'service' %}">Services</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="{% url 'price' %}">Pricing</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                </li>
+              </ul>
+               <div class="quote_btn-container">
+                <!-- <form class="form-inline">
+                  <button class="btn nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form> -->
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> Call : 0537882387 </span>
+                </a>
+              </div> 
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- about section -->
+
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>About Us</h2>
+              </div>
+              <p>
+                Skyline Webservice is a dynamic and innovative company dedicated to delivering exceptional  solutions. With a commitment to excellence and a focus on [key values], we have successfully [brief accomplishment or unique selling proposition]. Our diverse team of experts brings a wealth of experience to every project, ensuring our clients receive top-notch service and tangible results.
+              </p>
+              <a href="{% url 'contact' %}"> CONTACT US </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="{% static 'website/images/about-img.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end about section -->
+
+    <!-- info section -->
+
+    <section class="info_section layout_padding2">
+      <video autoplay loop muted playsinline id="info_background_video">
+        <source src="{% static 'website/images/skyline3.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_contact">
+              <h4>Address</h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> [47 Eban AVE, Tema Metropolis, Greater Accra Region]</span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> Call 0537882387 </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> info@skylinewebservices.com </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-telegram" aria-hidden="true"> </i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_link_box">
+              <h4>Links</h4>
+              <div class="info_links">
+                <a class="" href="{% url 'index' %}">
+                  <img src="{% static 'website/images/nav-bullet.png' %}" alt="" />
+                  Home
+                </a>
+                <a class="" href="{% url 'about' %}">
+                  <img src="{% static 'website/images/nav-bullet.png' %}" alt="" />
+                  About
+                </a>
+                <a class="" href="{% url 'service' %}">
+                  <img src="{% static 'website/images/nav-bullet.png' %}" alt="" />
+                  Services
+                </a>
+                <!-- <a class="active" href="{% url 'price' %}">
+                  <img src="{% static 'website/images/nav-bullet.png' %}" alt="" />
+                  Pricing
+                </a> -->
+                <a class="" href="{% url 'contact' %}">
+                  <img src="{% static 'website/images/nav-bullet.png' %}" alt="" />
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_detail">
+              <h4>Info</h4>
+              <p>
+                At skylinewebservices, we specialize in creating stunning and effective websites tailored
+                 to meet your unique needs. Whether you're a small business looking to
+                  establish your online presence or
+                 a large corporation seeking to revamp your digital 
+                 platform, we've got you covered.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-0">
+            <h4>Subscribe</h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  
+    <!-- end info section -->
+  
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          © <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.skylinewebservice/">Skylinewebservice</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQery -->
+    <script src="\{% static 'website/js/jquery-3.4.1.min.js' %}"></script>
+    <!-- bootstrap js -->
+    <script src="\{% static 'website/js/bootstrap.js' %}"></script>
+    <!-- custom js -->
+    <script src="\{% static 'website/js/custom.js' %}"></script>
+  </body>
+</html>
